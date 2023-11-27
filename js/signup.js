@@ -14,12 +14,3 @@ signUpBtn.addEventListener("click", () => {
 
 fistForm.addEventListener("submit", (e) => e.preventDefault());
 secondForm.addEventListener("submit", (e) => e.preventDefault());
-
-document.addEventListener("DOMContentLoaded", function () {
-    const usernameInput = document.querySelector('input[type="text"][placeholder="username"]');
-
-    usernameInput.addEventListener('input', function (event) {
-    const enteredUsername = event.target.value.trim();
-    localStorage.setItem('username', enteredUsername);
-    });
-});
